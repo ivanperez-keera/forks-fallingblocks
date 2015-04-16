@@ -1,0 +1,25 @@
+Name:                fallingblocks
+Version:             0.1.4
+Synopsis:            A fun falling blocks game.
+Description:         A game where blocks of different shapes fall down the screen.  If you
+		     either fill an entire line or get four of the same color in a row,
+		     those disappear.  How long can you go before the blocks fill the screen?
+License:             GPL
+License-file:        LICENSE
+Author:              Ben Sanders
+Copyright:           (c) 2009 by Ben Sanders
+Maintainer:          Ben Sanders <bwsanders@gmail.com>
+Build-Type:          Simple
+Cabal-Version: 	     >= 1.2
+Category:            Game
+Homepage:            http://bencode.blogspot.com/2009/03/falling-blocks-tetris-clone-in-haskell.html
+Data-Files:          data/blueblock.bmp, data/cyanblock.bmp, data/greenblock.bmp, data/greyblock.bmp, 
+                     data/orangeblock.bmp, data/purpleblock.bmp, data/redblock.bmp, data/yellowblock.bmp,
+                     data/music.mp3, data/Joystix.ttf
+
+Executable fallingblocks
+  Main-is:        main.hs
+  other-modules:  Board, BoardTest, GameController, Game, GameState, GameTest, GraphicsInfo, 
+                  Helpers, Shape, ShapeTest, SplashController
+  hs-source-dirs: src
+  Build-Depends:  base, SDL, containers, SDL-ttf, SDL-mixer >= 0.5.5, random
