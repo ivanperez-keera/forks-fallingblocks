@@ -3,3 +3,5 @@ original author is no longer accessible.
 
 The author of this game is Ben Sanders. I have made 2 minor changes to make it
 work with newer versions of GHC. Other than that, it remains unchanged.
+
+![Falling blocks](https://github.com/ivanperez-keera/fallingblocks/raw/master/screenshots/game.png)
